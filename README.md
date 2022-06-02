@@ -1,7 +1,7 @@
 # News React App
 
 ### IMPORTANT
-Before run following commands, please create .env file with content included on example.env file at same directory folder and provide url and port of backend project (contained at https://github.com/geniuspacs/news-api/)
+Before run following commands, please create .env file with content included on example.env file at same directory folder including same variables that example.env contains.
 
 ### About unit testing...
 I have not time to develop unit testing but I want to demostrate that I can do it so you can go to other of my recent projects (for example, https://github.com/geniuspacs/golden_test which is developed with Angular, but in fact is unit testing too)

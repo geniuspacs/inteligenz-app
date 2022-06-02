@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# News React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### IMPORTANT
+Before run following commands, please create .env file with content included on example.env file at same directory folder and provide url and port of backend project (contained at https://github.com/geniuspacs/news-api/)
 
-## Available Scripts
+### About unit testing...
+I have not time to develop unit testing but I want to demostrate that I can do it so you can go to other of my recent projects (for example, https://github.com/geniuspacs/golden_test which is developed with Angular, but in fact is unit testing too)
 
-In the project directory, you can run:
+## DETAILS
 
-### `npm start`
+This project is developed with React implementing Typescript. We are using React Bootstrap for interfaces.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Data source
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Data provider is newsapi.org which give us an API to get last news from worldwide. To see how we are retrieving data you can see helper useFetch (src/helpers/useFetch);
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We are using basically 3 components:
 
-### `npm run build`
+1.- Search: using for search news by words included in title or description.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.- Dashboard: is the first component you can see. It contains a list of news. NewsApi.org give us news order by most recent date so you do not need to include any extra params.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+3.- Article Details: is a basic screen to see details about new. You can read full description, go back to list or go to full new in the main source.
